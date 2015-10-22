@@ -1,16 +1,11 @@
-      test : function(){
 
-           var v = document.getElementById('section7');
            vid = document.createElement('video');
            vid.id = "thePlayer";
-           v.appendChild(vid);
-           v = document.getElementById('thePlayer');
-           var c = document.getElementById('section7');
+           v = vid;
+
            can = document.createElement('canvas');
            can.id = "thecanvas";
-           c.appendChild(can);
-           c = document.getElementById('thecanvas');
-
+           c = can;
 
 
 
@@ -45,8 +40,6 @@
 //the canvas part
 
            var isStreaming = false,
-               v = document.getElementById('thePlayer'),
-               c = document.getElementById('thecanvas');
                con = c.getContext('2d');
                w = 600,
                h = 420,
@@ -109,5 +102,3 @@
                   }
                   con.putImageData(imageData, 0, 0);
                }
-
-      }
