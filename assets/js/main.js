@@ -91,7 +91,7 @@
 
           //"Is the ambient Dark?" loop
           setInterval(function(){
-            if(getBrightness() < 80){
+            if(getBrightness() < 90){
                _qsa("body")[0].classList.add("dark");
                switcher(1);
             }else{
