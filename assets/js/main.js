@@ -92,12 +92,8 @@
 
           //"Is the ambient Dark?" loop
           setInterval(function(){
-<<<<<<< HEAD
-            if(getBrightness() < 90){
-=======
             console.log(getBrightness())
             if(getBrightness() < 95){
->>>>>>> gh-pages
                _qsa("body")[0].classList.add("dark");
                switcher(1);
             }else{
