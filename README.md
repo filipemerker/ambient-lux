@@ -22,3 +22,8 @@ This demo uses `getUserMEdia` html5 API to acces the user's webcam. After that, 
         return brightness;
       }
 
+## Credits
+**Music** https://www.youtube.com/watch?v=6Byew7KNS6Y
+**Brightness check logic** https://gist.github.com/codearachnid/5983831
+**Particles** http://vincentgarreau.com/particles.js/
+**Face recognition** http://auduno.github.io/clmtrackr/clm_video.html
