@@ -1,0 +1,48 @@
+body.dark{
+	background-color: white;
+}
+html, body{
+	margin: 0px;
+    padding: 0px;
+    float: left;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+body{
+	-webkit-transition: all .3s; /* Safari */
+    transition: all .3s;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #010101;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+  opacity: 0;
+}
+#screen{
+	float: left;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -225px;
+	z-index: 10;
+}
+body.dark #screen{
+	opacity: 0.9;
+}
+#canvas2{
+	float: left;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -225px;
+	z-index: 11;
+	opacity: 0;
+}
