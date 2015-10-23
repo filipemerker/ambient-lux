@@ -81,6 +81,7 @@
        }, false);
 
        v.addEventListener('play', function() {
+        setTimeout(function(){
           // Every 33 milliseconds copy the video image to the canvas
           setInterval(function() {
              if (v.paused || v.ended) return;
@@ -91,7 +92,12 @@
 
           //"Is the ambient Dark?" loop
           setInterval(function(){
+<<<<<<< HEAD
             if(getBrightness() < 90){
+=======
+            console.log(getBrightness())
+            if(getBrightness() < 95){
+>>>>>>> gh-pages
                _qsa("body")[0].classList.add("dark");
                switcher(1);
             }else{
@@ -99,12 +105,14 @@
                switcher(0);
             }
           }, 1000);
+        }, 3000)
        }, false);
 
        var switcher = function(sw){
           $(music).stop().animate({volume: sw});
           $('#particles-js').stop().animate({opacity: sw});
           $('#canvas2').stop().animate({opacity: sw});
+          $('.bar').css('width', (getBrightness()*3));
        }
 
 
