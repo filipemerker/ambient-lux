@@ -3,6 +3,12 @@ This is an experiment in measuring the user ambient light and changing the UI ba
 
 See the [demo here](http://filipemerker.github.io/ambient-lux/)
 
+##With your light on
+![Image of light on](http://i.imgur.com/vDO5Yrn.jpg)
+
+##With your light off
+![Image of light off](http://i.imgur.com/82NnUJA.jpg)
+
 This demo uses `getUserMEdia` html5 API to acces the user's webcam. After that, it loop through the pixels using a custom function to detect rgb bright of every pixel, returning a "bright" percentual that is used to handle the UI changes.
 
       getBrightness = function(){
